@@ -1,8 +1,17 @@
+import React from "react";
+import Chat from "../../components/chat";
+import Login from "../../components/login";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../../firebase/firebase";
+
 function Home() {
+  const [user] = useAuthState(auth);
   return (
-    <div>
-      <h1>ok</h1>
-    </div>
+    <>
+    {
+      user ? <Chat /> : <Login />
+    }
+    </>
   );
 }
 
