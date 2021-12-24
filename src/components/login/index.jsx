@@ -6,13 +6,7 @@ import { Container, LoginButton } from "./styles";
 const Login = () => {
   async function signInWithGoogle() {
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider)
-      .then((user) => {
-        console.log(user);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    await signInWithPopup(auth, provider);
   }
 
   return (

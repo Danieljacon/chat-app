@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Input } from "./styles";
+import { Container, Input, SendButton, Form } from "./styles";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db, auth } from "../../firebase/firebase";
 
@@ -18,18 +18,20 @@ const Send = () => {
       photoURL,
       uid,
       displayName,
-      timestamp: serverTimestamp(),
+      timestamp: serverTimestamp()
     });
+
     setText("");
   };
-
+  
+ 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <Container>
+      <Form onSubmit={handleSubmit}>
         <Input value={text} onChange={setValueMsg}></Input>
-        <button>Enviar</button>
-      </form>
-    </div>
+        <SendButton>Enviar</SendButton>
+      </Form>
+    </Container>
   );
 };
 
