@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 `;
 
 export const LoginButton = styled.button`
@@ -25,6 +26,9 @@ export const LoginButton = styled.button`
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
   &:hover {
@@ -37,3 +41,9 @@ export const LoginButton = styled.button`
       rgba(0, 0, 0, 0.25);
   }
 `;
+
+export const Imagem = styled.img`
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+`

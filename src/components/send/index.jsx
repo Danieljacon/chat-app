@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Container, Input, SendButton, Form } from "./styles";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db, auth } from "../../firebase/firebase";

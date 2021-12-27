@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { auth } from "../../firebase/firebase";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { Container, LoginButton } from "./styles";
+import { Container, LoginButton, Imagem } from "./styles";
+import googleIcon from "../../assets/icons/google.png";
 
 const Login = () => {
   async function signInWithGoogle() {
@@ -10,13 +11,14 @@ const Login = () => {
   }
 
   return (
-    <>
+
       <Container>
         <LoginButton onClick={signInWithGoogle}>
           Faça login com o Google
+          <Imagem src={googleIcon} alt="Google" />
         </LoginButton>
       </Container>
-    </>
+
   );
 };
 

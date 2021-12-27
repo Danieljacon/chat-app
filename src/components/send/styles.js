@@ -17,15 +17,15 @@ export const Container = styled.div`
   );
   /* border-bottom: white 1px solid; */
   box-shadow: 0px -4px 0px rgba(0, 0, 0, 0.25);
-`
+`;
 
 export const Input = styled.input`
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 10px;
-    width: 60%;
-`
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  width: 60%;
+`;
 
 export const SendButton = styled.button`
   padding: 5px 20px;
@@ -44,7 +44,6 @@ export const SendButton = styled.button`
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 
-
   &:hover {
     background: linear-gradient(
         90deg,
@@ -57,10 +56,9 @@ export const SendButton = styled.button`
 `;
 
 export const Form = styled.form`
-width: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-`
-
+`;
